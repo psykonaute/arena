@@ -1,0 +1,301 @@
+/**********************/
+/********* TAGS *******/
+/**********************/
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    /*background: #ebebeb*/
+     background-image: url('../assets/images/ui/paperTexture.png');
+     background-repeat : repeat;
+}
+
+body {
+    font-family:  Avenir, sans-serif, "Helvetica Neue", Helvetica, Arial;
+    margin: 0;
+     padding: 0;
+     font-weight: 100;
+    
+}
+
+a {
+    text-decoration: none
+    }
+
+section {
+    padding: 40px 1px;
+    margin: 1px 5px;
+    text-align: center;
+    overflow: hidden;
+    background: white
+}
+
+
+header{
+	 background-image: url('../assets/images/ui/paperTexture.png');
+     text-align: center;
+	
+}
+footer {
+	text-align: center;
+	padding : 20px;
+	position : relative;
+	clear : both;
+	color: #222;
+	
+}
+
+button {
+    font-size: 18px;
+    border: 0;
+    padding: 15px 30px;
+    background: #00AC7F;
+    color: #fff;
+    cursor: pointer
+    }
+
+h1{
+	font-family:  'Permanent Marker',Avenir, sans-serif, "Helvetica Neue", Helvetica, Arial;
+
+}
+
+article {
+    font-family: 'Open Sans', sans-serif, "Helvetica Neue", Helvetica, Arial;
+    padding: 40px 10px;
+    width: 330px;
+    border-color: rgba(141, 141, 141, 0.35);
+    border-style: none;
+    border-width: 1px;
+    border-height: 1px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 100;
+    margin: 10px 4px;
+	background-image: url('../assets/images/ui/strokeSeparator.png');
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    background-position: center top 10px; 
+}
+    
+article h1{
+    font-family: 'Open Sans', sans-serif, "Helvetica Neue", Helvetica, Arial;
+	font-weight: 800;
+	font-size: 21px;
+}
+
+article .author{
+	font-family:  'Permanent Marker',Avenir, sans-serif, "Helvetica Neue", Helvetica, Arial;
+	color: #333333;
+}
+
+
+article img{
+	width:100%;
+	height:auto;
+}
+
+article #authorImage{
+	width:100px;
+	height:auto;
+	border: 4px solid #1c1b1b;
+	
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+
+/**********************/
+/****** CLASSES *******/
+/**********************/
+article.fullArticle{
+	 width: 600px;
+	 border-style: dotted;
+	 background-image:none;
+}
+
+
+.wrap {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 0;
+    padding: 50px 1px
+    }
+
+
+.arenaLogo {
+    width: 400px;
+    height: auto
+    }
+
+
+.bigButton {
+    background-color: #f3f3f3;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    color: #333;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif, "Helvetica Neue", Helvetica, Arial;
+	font-weight: 800;
+	font-size: 30px;
+	 border:0;
+	 margin: 0px;
+	-moz-box-shadow:  0 -1px 10px rgba(0,0,0,0.2),inset 0 1px 1px rgba(255,255,255,1);
+	-webkit-box-shadow:  0 -1px 10px rgba(0,0,0,0.2),inset 0 1px 1px rgba(255,255,255,1);
+	box-shadow:  0 -1px 10px rgba(0,0,0,0.2) ,inset 0 1px 1px rgba(255,255,255,1);   
+	 outline: none;
+}
+
+.bigButton:hover {
+   background-color: #f4f4f4;
+   -moz-box-shadow:  0 -1px 8px rgba(0,0,0,0.2),inset 0 1px 1px rgba(255,255,255,1);
+	-webkit-box-shadow:  0 -1px 8px rgba(0,0,0,0.2),inset 0 1px 1px rgba(255,255,255,1);
+	box-shadow:  0 -1px 8px rgba(0,0,0,0.2) ,inset 0 1px 1px rgba(255,255,255,1);   
+	margin: 0px;
+}
+
+.bigButton:active {
+    position: relative;
+    top: 1px;
+   background-color: #f6f6f6;
+   -moz-box-shadow:  0 -1px 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow:  0 -1px 3px rgba(0,0,0,0.3);
+	box-shadow:  0 -1px 3px rgba(0,0,0,0.3); 
+	font-size: 29px;
+	margin: 1px 1px 1px 1px;
+
+}
+    
+.chart {
+  position: relative;
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  left :50%;
+}
+
+.pieTip {
+    font-family: 'Open Sans', sans-serif, "Helvetica Neue", Helvetica, Arial;
+  position: absolute;
+  float: left;
+  min-width: 30px;
+  max-width: 300px;
+  padding: 5px 18px 6px;
+  border-radius: 2px;
+  background: rgba(255,255,255,.97);
+  color: #444;
+  font-size: 19px;
+  text-shadow: 0 1px 0 #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: .06em;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.5);
+  -webkit-transform: all .3s;
+     -moz-transform: all .3s;
+      -ms-transform: all .3s;
+       -o-transform: all .3s;
+          transform: all .3s;
+  pointer-events: none;
+}
+.pieTip:after {
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      content: "";
+      height: 0;
+      margin: 0 0 0 -6px;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-top: 6px solid rgba(255,255,255,.95);
+      line-height: 0;
+}
+.chart path { cursor: pointer; }
+
+
+
+/****************************/
+/******** id ****************/
+/*** ONLY USED ONCE STUFF ***/
+
+
+#main{
+	
+	text-align: center;
+}
+
+
+
+#termsAndConditions{
+	font-size: 10px;
+	color:#c3c3c3;
+	
+}
+#termsAndConditions a{
+	font-size: 10px;
+	color:#a6a6a6;
+}
+
+#previousDayBtn{
+	background:  url('../assets/images/ui/dayBeforeBtn.png') no-repeat scroll 0px top;
+	margin: 0;
+  padding: 0;
+    text-decoration:none;
+  border: none;
+  width:240px;
+  height:135px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+#previousDayBtn:active{
+	background:  url('../assets/images/ui/dayBeforeBtn.png') no-repeat scroll 0px bottom;
+	margin: 0;
+  padding: 0;
+  outline: none;
+    
+}
+
+
+
+/******************************/
+/******* MOBILE SCREEN ********/
+/******************************/
+@media screen and (max-width: 480px) {
+article {
+    width: 95%;
+}
+        
+article.fullArticle{
+	 width: 90%;
+	 border-style: dotted;
+	 background-image:none;
+}
+main {
+   
+}
+.arenaLogo {
+    width: 100%;
+    height: auto
+ }
+body{
+ padding: 0 0;
+ margin: 0 0;
+ }
+        
+}
+/*******************************************/
+/******* TABLET/SMALL DESKTOP VIEW *********/
+/*******************************************/
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .buyButton {
+        font-size: 13px
+        }
+    }

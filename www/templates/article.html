@@ -1,0 +1,24 @@
+<div id="articles"  ng-controller="ArticleController as articleController">
+  	<header>
+	  <div id="logo"><img class="arenaLogo" src="assets/images/ui/Header.png"></div>
+	</header> 
+  	
+  	<!--<div ng-repeat="category in categories  |orderBy:ID " ng-show="category.name!='Uncategorized'">-->
+  	<main id='category'>
+	  	<h1>Today<br>"{{currentCategory.name}}"<br></h1>
+ 	  <article  ng-repeat="article in articles " ><!--  ng-show="article.terms.category[0].ID==category.ID"-->
+ 	  	<img  id="authorImage" ng-src="{{article.author.avatar}}" ><br>
+ 	  	<span class="author">{{article.author.username}}</span>
+	  	<header>
+	    	<h1 ng-bind-html='article.title'>{{article.title}}</h1>
+			<!--<p>Published: <time pubdate="pubdate" >{{article.date | stringToTimestamp |fromNow}}</time></p>-->
+		</header> 
+	  <p ng-bind-html='article.content'>article.content</p>
+	  <input type="button" value="VOTE" class="bigButton"></input>
+	  <input type="button" value="COMMENT" class="bigButton" ng-click="onClickCommentBtn(article.ID)"></input>
+  	</article>
+	</main> <!--<div id='category'>-->
+	<br><div id="chart" ></div>
+	<button id="previousDayBtn" value="The day before >>" ng-click="onClickPreviousDayBtn()"></button>
+
+</div><!--<div id='articles'>-->

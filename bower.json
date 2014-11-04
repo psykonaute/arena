@@ -1,0 +1,24 @@
+{
+  "name": "newin",
+  "version": "0.0.1",
+  "homepage": "https://github.com/TimeIncUK/lab.newin",
+  "authors": [
+    "Mathieu Gosselin <mathieu@psykosoft.net>"
+  ],
+  "description": "New products daily",
+  "main": "www/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-deckgrid": "~0.4.4",
+    "html5-boilerplate": "~4.3.0",
+    "moment": "~2.8.3",
+    "angular-moment": "~0.8.2"
+  }
+}

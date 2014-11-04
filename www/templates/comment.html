@@ -1,0 +1,22 @@
+<div id="comment"  ng-controller="CommentController as commentController">
+ 	 <article class="fullArticle" ng-swipe-left="onClickPreviousArticle()" ng-swipe-right="onClickNextArticle()">
+ 	  	<img  id="authorImage" ng-src="{{article.author.avatar}}" ><br>
+ 	  	<span class="author">{{article.author.username}}</span>
+	  	<header>
+	    	<h1 ng-bind-html='article.title'>{{article.title}}</h1>
+			<!--<p>Published: <time pubdate="pubdate" >{{article.date | stringToTimestamp |fromNow}}</time></p>-->
+		</header> 
+	  <p ng-bind-html='article.content'>article.content</p>
+	  <div id="articleComment">
+	  	
+  		<div id="disqus_thread"></div>
+	 </div>
+
+  	</article>
+  	<br>
+  	<input type="button" value="<< PREVIOUS" class="bigButton" ng-click="onClickPreviousArticle()"></input>
+  	<input type="button" value="NEXT >>" class="bigButton" ng-click="onClickNextArticle()"></input>
+
+	<!--<button class="bigButton" id="previousCommentBtn" value="Next article" ng-click="onClickArticle()"></button>-->
+
+</div><!--<div id='comment'>-->
